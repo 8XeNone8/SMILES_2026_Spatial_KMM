@@ -1,0 +1,46 @@
+[
+  {
+    "Function": "sin_cos",
+    "Random CV_mean": 2.9806830739997934,
+    "Random CV_std": 0.4640094185358741,
+    "Spatial CV_mean": 3.9195533636773128,
+    "Spatial CV_std": 1.1811936459421835,
+    "Importance-weighted CV_mean": 17.43720795581453,
+    "Importance-weighted CV_std": 16.789597616401924,
+    "KMM-weighted spatial CV_mean": 3.5671495515836043,
+    "KMM-weighted spatial CV_std": 1.0188956733838703
+  },
+  {
+    "Function": "linear",
+    "Random CV_mean": 0.10233038731154942,
+    "Random CV_std": 0.006061752853514828,
+    "Spatial CV_mean": 0.10645343615902828,
+    "Spatial CV_std": 0.021097174646753994,
+    "Importance-weighted CV_mean": 0.21209291643347017,
+    "Importance-weighted CV_std": 0.2012095044173824,
+    "KMM-weighted spatial CV_mean": 0.12166418674534951,
+    "KMM-weighted spatial CV_std": 0.03146501410383395
+  },
+  {
+    "Function": "exponential",
+    "Random CV_mean": 0.6977096636406828,
+    "Random CV_std": 0.08161925059523607,
+    "Spatial CV_mean": 0.8133212688872673,
+    "Spatial CV_std": 0.20353274677225233,
+    "Importance-weighted CV_mean": 0.7701464006993904,
+    "Importance-weighted CV_std": 0.2206485347559556,
+    "KMM-weighted spatial CV_mean": 0.96505721813801,
+    "KMM-weighted spatial CV_std": 0.1749438044548265
+  },
+  {
+    "Function": "periodic",
+    "Random CV_mean": 0.3708919685543548,
+    "Random CV_std": 0.06519723311198108,
+    "Spatial CV_mean": 0.3693541210869781,
+    "Spatial CV_std": 0.03546006568401351,
+    "Importance-weighted CV_mean": 2.2803861528636125,
+    "Importance-weighted CV_std": 1.6913444691046717,
+    "KMM-weighted spatial CV_mean": 0.3951202539849962,
+    "KMM-weighted spatial CV_std": 0.03530710625627281
+  }
+]
