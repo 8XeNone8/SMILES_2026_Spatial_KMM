@@ -6,6 +6,8 @@ json 2.0.9
 matplotlib 3.10.0
 scikit-learn 1.6.1
 scipy 1.17.1
+tabulate 0.10.0
+re 2.2.1
 
 The main solution is in the file `KMM.ipynb`. It used `Jupyter Notebook` to run the `KMM.ipynb`, the main functions for tasks are in the file `CV_Methods.py`, 
 the methods realization are in the `Metthods.py`. 
@@ -35,7 +37,7 @@ realized in `kmm_weights`
 ## Metrics
 Realised in code: simple MSE. But more effective metrics are:
 * *Risk-estimation bias*: difference between estimated CV error and known deployment error in simulations.
-* *Absolute and relative bias*: $|\hat{R}_{CV} - R_{dep}|$ and the same error normalized by $R_{dep}$.
+* *Absolute and relative bias*: $|{R̂}_{CV} - R_{dep}|$ and the same error normalized by $R_{dep}$.
 * *Variance and stability*: variability across repeated fold partitions and KMM hyperparameters.
 * *Overlap quality*: effective sample size, maximum weight, clipped-weight share, and MMD before and after weighting.
 * *Model-selection impact*: whether weighted spatial CV selects hyperparameters that improve deployment error.
@@ -44,10 +46,12 @@ Realised in code: simple MSE. But more effective metrics are:
 ## Results
 Results are imported from `results.json`.
 
-| Function          | Random CV         | Spatial CV        | Importance-weighted CV | KMM-weighted spatial CV |
-|-------------------|-------------------|-------------------|------------------------|--------------------------|
-| linear            | 0.0067 ± 0.0009   | 0.0067 ± 0.0009   | 0.0078 ± 0.0014        | 0.0070 ± 0.0011          |
-| exponential       | 0.3837 ± 0.0299   | 0.4833 ± 0.1180   | 0.7498 ± 0.5784        | 0.4931 ± 0.1595          |
-| periodic          | 1.0263 ± 0.1024   | 1.0235 ± 0.2113   | 1.1595 ± 0.2280        | 1.1656 ± 0.2265          |
-| random            | 1.0052 ± 0.1578   | 1.0102 ± 0.0314   | 1.3053 ± 0.3765        | 1.0697 ± 0.0849          |
-| random_autocorr   | 0.9454 ± 0.1790   | 1.2316 ± 0.5302   | 2.5865 ± 1.7302        | 1.1797 ± 0.2493          |
+<!-- TABLE_START -->
+| Function        | Random CV       | Spatial CV      | Importance-weighted CV   | KMM-weighted spatial CV   |
+|:----------------|:----------------|:----------------|:-------------------------|:--------------------------|
+| linear          | 0.0083 ± 0.0012 | 0.0084 ± 0.0013 | 0.0100 ± 0.0012          | 0.0095 ± 0.0018           |
+| exponential     | 0.3345 ± 0.0294 | 0.4493 ± 0.1568 | 0.4242 ± 0.0772          | 0.4654 ± 0.1376           |
+| periodic        | 1.0159 ± 0.2376 | 1.0082 ± 0.1484 | 1.3351 ± 0.3398          | 1.0403 ± 0.1579           |
+| random          | 1.0276 ± 0.2354 | 1.0128 ± 0.1178 | 1.5315 ± 0.7885          | 1.0756 ± 0.1715           |
+| random_autocorr | 1.0067 ± 0.1173 | 1.9548 ± 1.0955 | 1.6816 ± 0.6645          | 1.6155 ± 1.4618           |
+<!-- TABLE_END -->
